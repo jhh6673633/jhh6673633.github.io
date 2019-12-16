@@ -41,7 +41,7 @@ th {
 .headerbg {
 	/* width: 100%;
 	height: 790px; */
-	background: url("../images/banner.jpg") no-repeat red top center;
+	background: url("../images/banner.jpg") no-repeat top center;
 	background-size: cover;
 }
 .container {
