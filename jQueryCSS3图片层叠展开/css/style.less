@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 14px;
+    font-family: 'Raleway', 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+    margin: 20px;
+    height: 2000px;
+    background: linear-gradient(right bottom, #F5A1D5 0%, #CDD3E9 100%);
+    background: linear-gradient(to left top, #F5A1D5 0%, #CDD3E9 100%);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-weight: 300;
+}
+
+ul {
+    list-style: none;
+}
+
+.ulstyle() {
+    width: 660px;
+    margin: 0 auto 20px;
+    cursor: pointer;
+    position: relative;
+    padding: 20px 0;
+}
+
+.h2style() {
+    &.title {
+        margin-bottom: 20px;
+
+        h2 {
+            font-weight: 700;
+        }
+    }
+}
+
+.cardstyle() {
+    background: #fff;
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    box-shadow: 1px 2px 2px 0 #aaa;
+    transition: all 0.3s;
+
+    img {
+        width: 100%;
+        height: auto;
+        padding: 5px;
+    }
+
+    .content {
+        padding: 5px 10px;
+    }
+
+
+    &.card-1 {
+        z-index: 3;
+        transform: rotateZ(-2deg);
+    }
+
+    &.card-2 {
+        z-index: 2;
+        transform: rotateZ(-7deg);
+        // transition-delay: 0.05s;
+    }
+
+    &.card-3 {
+        z-index: 1;
+        transform: rotateZ(5deg);
+        // transition-delay: 0.1s;
+
+    }
+}
+
+ul.cards {
+    .ulstyle;
+    height: 300px;
+
+    li {
+        .h2style;
+
+        &.card {
+            .cardstyle;
+
+            &.card-2 {
+                transition-delay: 0.05s;
+            }
+
+            &.card-3 {
+                transition-delay: 0.1s;
+            }
+        }
+    }
+
+    &.transition li.card {
+        transform: rotateZ(0);
+
+        &.card-1 {
+            left: 440px;
+        }
+
+        &.card-2 {
+            left: 220px;
+        }
+    }
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.6);
+    padding-bottom: 20px;
+}
+
+ul.card-stacks {
+    .ulstyle;
+    height: 700px;
+    padding: 0;
+
+    li {
+        .h2style;
+
+        &.stack {
+            position: absolute;
+            left: 0;
+            transition: all 0.3s;
+
+            ul.cards-down {
+                position: relative;
+                margin: 0 0 20px;
+                padding: 20px;
+
+                li.card {
+                    .cardstyle;
+                    transition: all 0.4s cubic-bezier(0.63, 0.15, 0.03, 1.22);
+                    transition-delay: 0.4s;
+                    top: 0;
+                }
+            }
+
+        }
+    }
+
+    &.active li.stack-1 {
+        left: 0;
+    }
+
+    &.active li.stack-2 {
+        left: 220px;
+    }
+
+    &.active li.stack-3 {
+        left: 440px;
+    }
+
+    &.active li.stack ul.cards-down li.card {
+        transform: rotateZ(0);
+
+        &.card-1 {
+            top: 440px;
+        }
+
+        &.card-2 {
+            top: 220px;
+        }
+    }
+
+
+}
+
+ul.cards-split {
+    .ulstyle;
+    height: 280px;
+
+    li {
+        .h2style;
+
+        &.card {
+            .cardstyle;
+            left: 220px;
+
+
+            &.card-2 {
+                transition-delay: 0.05s;
+            }
+
+            &.card-3 {
+                transition-delay: 0.1s;
+            }
+        }
+    }
+
+    &.trigger li.card {
+        transform: rotate(0);
+
+        &.card-1 {
+            left: 0;
+        }
+
+        &.card-2 {
+            left: 440px;
+        }
+
+        &.card-3 {
+            left: 220px;
+        }
+    }
+
+}
+
+ul.cards-split-delay {
+    .ulstyle;
+    height: 280px;
+
+    li {
+        &.title {
+            .h2style;
+        }
+
+
+        &.card {
+            .cardstyle;
+            left: 220px;
+            &.card-2 {
+                transition-delay: 0.6s;
+            }
+        }
+
+    }
+
+    &.delay li.card {
+        transform: rotate(0);
+
+        &.card-1 {
+            left: 0;
+        }
+
+        &.card-2 {
+            left: 440px;
+        }
+
+        &.card-3 {
+            left: 220px;
+            transition-delay: 0.6s;
+        }
+    }
+}

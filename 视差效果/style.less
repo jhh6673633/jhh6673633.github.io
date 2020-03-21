@@ -1,0 +1,169 @@
+body {
+    margin: 0;
+    background-image: linear-gradient(120deg, rgba(50, 150, 100, 0.8), rgba(0, 0, 0, 0)),
+    linear-gradient(240deg, rgba(150, 50, 50, 0.8), rgba(0, 0, 0, 0));
+    width: 100%;
+    height: 100vh;
+    padding: 150px;
+    box-sizing: border-box;
+    perspective: 1500px;
+
+}
+
+.stage {
+    width: 400px;
+    height: 600px;
+    // background: url('https://www.17sucai.com/preview/1424582/2018-11-08/kp/img/3dr_mono.png') center;
+    // background: url('./600x600.jpg');
+
+    background-size: cover;
+    margin: 0 auto;
+    position: relative;
+    // transform: rotateY(30deg);
+    // transform: rotatex(60deg);
+    transform-style: preserve-3d;
+    border-radius: 15px;
+    perspective: 1500px;
+    transform-origin: 50% 50% 150px;
+    transition: all 0.3s;
+
+    .mask {
+        .mask-layout;
+        background: url('./600x600.jpg') center;
+        background-size: cover;
+        z-index: 0;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h3 {
+            font-size: 36px;
+            color: white;
+            font-weight: bold;
+            transform: translateZ(1px);
+
+        }
+
+        p {
+            font-size: 24px;
+            color: white;
+            margin: 30px 0;
+            transform: translateZ(1px);
+
+        }
+
+        .chart {
+            display: flex;
+            justify-content: center;
+            transform: translateZ(1px);
+            transform-style: preserve-3d;
+
+            .chart-side() {
+                content: '1000';
+                display: block;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                left: 0;
+                top: 0;
+                transform-origin: left bottom;
+                text-align: right;
+                color: transparent;
+                background: linear-gradient(to left, rgb(212, 212, 212), lightblue);
+                transition: all 1s;
+            }
+
+            span {
+                width: 30px;
+                height: 30px;
+                // background: red;
+                margin: 15px;
+                position: relative;
+                transform: rotate(-45deg);
+                transform-style: preserve-3d;
+
+                i.top {
+                    .chart-side;
+                    background: white;
+                    text-align: center;
+                    line-height: 30px;
+                    // transform: translateZ(30px)
+                    transition: all 1s;
+
+                }
+
+                i.left {
+                    .chart-side;
+                    width: 0;
+                    transform: rotateY(-90deg);
+                    padding-right: 20px
+                    // background: lawngreen;
+                }
+
+                i.right {
+                    .chart-side;
+                    width: 0;
+                    transform: rotateY(-90deg) rotateX(90deg);
+                    // background: blue;
+                }
+            }
+        }
+    }
+
+    .mask-layout() {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        border-radius: 15px;
+    }
+
+    &::before {
+        .mask-layout;
+        background: rgba(0, 0, 0, 0.3);
+        z-index: 1;
+    }
+
+    &::after {
+        .mask-layout;
+        // background: rgba(0, 0, 0, 0.5);
+        background: url('./600x600.jpg');
+        background: rgb(65, 65, 65);
+        z-index: -1;
+        transform: translateZ(-20px);
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+    }
+}
+
+.stage.active {
+    transform: rotateX(60deg);
+
+    .mask {
+        h3 {
+            transform: translateZ(20px);
+        }
+
+        p {
+            transform: translateZ(20px);
+
+        }
+
+        .chart {
+            span {
+                i.top {
+                    transform: translateZ(100px);
+                }
+
+                i.left,
+                i.right {
+                    width: 100px;
+                    color: black;
+                }
+            }
+        }
+    }
+}

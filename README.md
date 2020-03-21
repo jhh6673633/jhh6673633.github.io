@@ -30,6 +30,12 @@
 
 #### HTML5
 
+###### 	Canvas
+
+​			[球球大作战](https://jhh6673633.github.io/球球大作战)
+
+​			[canvas+es6抽象艺术的背景粒子动画](https://jhh6673633.github.io/canvas+es6抽象艺术的背景粒子动画)
+
 #### CSS3
 
 ​			[文字特效](https://jhh6673633.github.io/文字特效)
@@ -37,4 +43,12 @@
 ​           [3d盒子旋转](https://jhh6673633.github.io/3d盒子旋转)
 
 ​		    [宫崎骏模拟视差](https://jhh6673633.github.io/宫崎骏模拟视差)	
+
+​			[3D进度条](https://jhh6673633.github.io/3D进度条)
+
+​			[jQueryCSS3图片层叠展开](https://jhh6673633.github.io/jQueryCSS3图片层叠展开)
+
+​    		[jQuery+css3密码强度指示](https://jhh6673633.github.io/JQuery+css3密码强度指示)
+
+
 

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Scalable <b>3D</b> Range Sliders</h1>
+    <main class="perspective" id="first-bar">
+        <section class="bar">
+            <div class="bar-face back percentage"></div>
+            <div class="bar-face floor percentage"></div>
+            <div class="bar-face roof percentage"></div>
+            <div class="bar-face front percentage"></div>
+        </section>
+        <input type="range" min="0" max="101" value="30">
+    </main>
+    <p>Simple Range</p>
+
+    <main class="perspective" id="second-bar">
+        <section class="bar">
+            <div class="bar-face back percentage"></div>
+            <div class="bar-face floor percentage"></div>
+            <div class="bar-face roof percentage"></div>
+            <div class="bar-face front percentage"></div>
+        </section>
+        <input type="range" min="0" max="101" value="60">
+    </main>
+    <p>Patterned Range</p>
+
+    <main class="perspective" id="third-bar">
+        <section class="bar">
+            <div class="bar-face back percentage"></div>
+            <div class="bar-face floor percentage"></div>
+            <div class="bar-face roof percentage"></div>
+            <div class="bar-face front percentage"></div>
+            <div class="indicator">89</div>
+        </section>
+        <input type="range" min="0" max="100" value="89">
+    </main>
+    <p>Gradient Range with Indicator</p>
+    <script src="main.js"></script>
+</body>
+
+</html>

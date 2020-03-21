@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>jQuery/CSS3图片层叠展开</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://cdn.staticfile.org/jquery/1.12.4/jquery.min.js"></script>
+</head>
+
+<body>
+    <ul class="cards">
+        <li class="title">
+            <h2>Slide right</h2>
+        </li>
+        <li class="card card-1">
+            <img src="./images/01.jpg" alt="">
+            <div class="content">
+                <h1>Card 1 Title</h1>
+                <p>Card description</p>
+            </div>
+        </li>
+        <li class="card card-2">
+            <img src="./images/02.jpg" alt="">
+            <div class="content">
+                <h1>Card 2 Title</h1>
+                <p>Card description</p>
+            </div>
+        </li>
+        <li class="card card-3">
+            <img src="./images/03.jpg" alt="">
+            <div class="content">
+                <h1>Card 3 Title</h1>
+                <p>Card description</p>
+            </div>
+        </li>
+    </ul>
+
+    <hr>
+
+    <ul class="card-stacks">
+        <li class="title">
+            <h2>Expand to grid</h2>
+        </li>
+        <li class="stack stack-1">
+            <ul class="cards-down">
+                <li class="card card-1">
+                    <img src="./images/04.jpg" alt="">
+                    <div class="content">
+                        <h1>Card 1 Title</h1>
+                        <p>Stack 1</p>
+                    </div>
+                </li>
+                <li class="card card-2">
+                    <img src="./images/05.jpg" alt="">
+                    <div class="content">
+                        <h1>Card 2 Title</h1>
+                        <p>Stack 1</p>
+                    </div>
+                </li>
+                <li class="card card-3">
+                    <img src="./images/06.jpg" alt="">
+                    <div class="content">
+                        <h1>Card 3 Title</h1>
+                        <p>Stack 1</p>
+                    </div>
+                </li>
+            </ul>
+        </li>
+        <li class="stack stack-2">
+            <ul class="cards-down">
+                <li class="card card-1">
+                    <img src="./images/07.jpg" alt="">
+                    <div class="content">
+                        <h1>Card 1 Title</h1>
+                        <p>Stack 2</p>
+                    </div>
+                </li>
+                <li class="card card-2">
+                    <img src="./images/08.jpg" alt="">
+                    <div class="content">
+                        <h1>Card 2 Title</h1>
+                        <p>Stack 2</p>
+                    </div>
+                </li>
+                <li class="card card-3">
+                    <img src="./images/02.jpg" alt="">
+                    <div class="content">
+                        <h1>Card 3 Title</h1>
+                        <p>Stack 2</p>
+                    </div>
+                </li>
+            </ul>
+        </li>
+        <li class="stack stack-3">
+            <ul class="cards-down">
+                <li class="card card-1">
+                    <img src="./images/06.jpg" alt="">
+                    <div class="content">
+                        <h1>Card 1 Title</h1>
+                        <p>Stack 3</p>
+                    </div>
+                </li>
+                <li class="card card-2">
+                    <img src="./images/01.jpg" alt="">
+                    <div class="content">
+                        <h1>Card 2 Title</h1>
+                        <p>Stack 3</p>
+                    </div>
+                </li>
+                <li class="card card-3">
+                    <img src="./images/02.jpg" alt="">
+                    <div class="content">
+                        <h1>Card 3 Title</h1>
+                        <p>Stack 3</p>
+                    </div>
+                </li>
+            </ul>
+        </li>
+
+    </ul>
+
+    <hr>
+
+    <ul class="cards-split">
+        <li class="title">
+            <h2>Split from middle</h2>
+        </li>
+        <li class="card card-1">
+            <img src="./images/04.jpg" alt="">
+            <div class="content">
+                <h1>Card 1 Title</h1>
+                <p>Card description</p>
+            </div>
+        </li>
+        <li class="card card-2">
+            <img src="./images/08.jpg" alt="">
+            <div class="content">
+                <h1>Card 2 Title</h1>
+                <p>Card description</p>
+            </div>
+        </li>
+        <li class="card card-3">
+            <img src="./images/07.jpg" alt="">
+            <div class="content">
+                <h1>Card 3 Title</h1>
+                <p>Card description</p>
+            </div>
+        </li>
+
+    </ul>
+
+    <hr>
+
+    <ul class="cards-split-delay">
+        <li class="title">
+            <h2>Delayed split from middle</h2>
+        </li>
+        <li class="card card-1">
+            <img src="./images/03.jpg" alt="">
+            <div class="content">
+                <h1>Card 1 Title</h1>
+                <p>Card description</p>
+            </div>
+        </li>
+        <li class="card card-2">
+            <img src="./images/06.jpg" alt="">
+            <div class="content">
+                <h1>Card 2 Title</h1>
+                <p>Card description</p>
+            </div>
+        </li>
+        <li class="card card-3">
+            <img src="./images/02.jpg" alt="">
+            <div class="content">
+                <h1>Card 3 Title</h1>
+                <p>Card description</p>
+            </div>
+        </li>
+    </ul>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

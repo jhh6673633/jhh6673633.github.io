@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito:400,900");
+
+* {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    background: linear-gradient(0deg, #EEEFED, #F9E3E9);
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: "Nunito", sans-serif;
+    color: #4D5075;
+    font-weight: 300;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 7vh 15vw 0vh 15vw;
+}
+
+h1 {
+    text-align: center;
+    margin: 0 0 10vh 0;
+    font-size: 7vh;
+    font-weight: 500;
+    text-shadow: 0px -15px 70px rgba(77, 80, 117, 0.6);
+
+    b {
+        font-weight: 900;
+    }
+}
+
+p {
+    text-align: center;
+    font-size: 1.3rem;
+    text-shadow: 10px 5px 25px rgba(77, 80, 117, 0.6);
+    margin-bottom: 7vh;
+}
+
+main.perspective {
+    text-align: center;
+    perspective: 70vh;
+    perspective-origin: 50% 50%;
+    position: relative;
+    transition: all 0.3s;
+    &:hover {
+        transform: scale(1.05);
+    }
+
+    .bar {
+        position: relative;
+        display: inline-block;
+        // width: 55vh;
+        // height: 7vh;
+        // background: cyan;
+        transform-style: preserve-3d;
+        transform: rotateX(55deg);
+
+        .bar-face {
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            transform-origin: 50% 100%;
+
+            // 进度条的样式
+            &.percentage::before {
+                width: 50px;
+                height: 100%;
+                content: "";
+                display: block;
+                position: absolute;
+                bottom: 0;
+                margin: 0;
+            }
+        }
+    }
+
+    input {
+        position: absolute;
+        height: 100%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        opacity: 0;
+    }
+}
+
+#first-bar {
+    .bar {
+        width: 55vh;
+        height: 7vh;
+
+        .bar-face {
+            background: rgba(255, 255, 255, 0.5);
+
+            &.percentage::before {
+                box-shadow: 0 1.6em 7em -0.3em rgba(149, 65, 105, 0.5);
+                background-color: rgba(149, 65, 105, 0.6);
+            }
+
+            &.floor {
+                box-shadow: 0 1.3em 1.2em -0.4em rgba(0, 0, 70, 0.25), 0 -2em 15em 0.5em #4d5075, 0 -0.75em 25em 10em rgba(255, 255, 255, 0.4);
+            }
+
+            &.roof {
+                transform: translateZ(7vh);
+            }
+
+            &.front {
+                transform: rotateX(-90deg);
+
+            }
+
+            &.back {
+                transform: rotateX(-90deg) translateZ(-7vh);
+            }
+        }
+    }
+
+    input {
+        width: 55vh;
+    }
+
+}
+
+#second-bar {
+    .bar {
+        width: 40vh;
+        height: 10vh;
+
+        .bar-face {
+            background: rgba(60, 75, 132, 0.5);
+            background-image: linear-gradient(90deg, rgba(134, 114, 146, 0.5), rgba(60, 75, 132, 0.1)), url("https://zephyo.github.io/22Days/code/5/graphics/stars.svg"), url("https://zephyo.github.io/22Days/code/5/graphics/stars2.svg");
+            background-repeat: repeat;
+
+            &.percentage::before {
+                box-shadow: 0 1.6em 7em -0.3em rgba(200, 212, 250, 0.5);
+                background-image: url("https://zephyo.github.io/22Days/code/5/graphics/sky.png");
+                opacity: 0.9;
+            }
+
+            &.floor {
+                box-shadow: 0 1.3em 1.2em -0.4em rgba(0, 0, 70, 0.25), 0 -2em 15em 0.5em #4d5075, 0 -0.75em 25em 10em rgba(255, 255, 255, 0.4);
+            }
+
+            &.roof {
+                transform: translateZ(10vh);
+            }
+
+            &.front {
+                transform: rotateX(-90deg);
+
+            }
+
+            &.back {
+                transform: rotateX(-90deg) translateZ(-10vh);
+            }
+        }
+    }
+
+    input {
+        width: 40vh;
+    }
+}
+
+#third-bar {
+    .bar {
+        width: 42vh;
+        height: 8vh;
+
+        .bar-face {
+            background: rgba(232, 154, 173, 0.7);
+
+            &.percentage::before {
+                box-shadow: 0 1.6em 7em -0.3em rgba(236, 0, 113, 0.5);
+                background: linear-gradient(90deg, rgba(245, 239, 200, 0.5), #ec0071);
+            }
+
+            &.floor {
+                box-shadow: 0 1.3em 1.2em -0.4em rgba(0, 0, 70, 0.25), 0 -2em 15em 0.5em #4d5075, 0 -0.75em 25em 10em rgba(255, 255, 255, 0.4);
+            }
+
+            &.roof {
+                transform: translateZ(8vh);
+            }
+
+            &.front {
+                transform: rotateX(-90deg);
+
+            }
+
+            &.back {
+                transform: rotateX(-90deg) translateZ(-8vh);
+            }
+
+        }
+
+        .indicator {
+            width: 8vh;
+            height: 8vh;
+            background: #ec0071;
+            color: white;
+            transform: translateY(9.6vh);
+            text-align: center;
+            font-size: 2.5vh;
+            font-weight: 900;
+            line-height: 8vh;
+
+            &::before {
+                content: '';
+                position: absolute;
+                left: 0;
+                right: 0;
+                margin: auto;
+                top: -6px;
+                background: #ec0071;
+                width: 4vh;
+                height: 4vh;
+                transform: rotate(45deg);
+                z-index: -1;
+            }
+        }
+    }
+
+    input {
+        width: 42vh;
+    }
+}
