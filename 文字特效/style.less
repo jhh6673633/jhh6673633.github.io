@@ -1,0 +1,123 @@
+// :root {
+//     // --bg: #6FBFD9;
+// }
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.init() {
+    position: relative;
+    margin: 0;
+    color: #FEDC0C;
+    text-align: center;
+    font-family: 'Luckiest Guy', cursive;
+    line-height: 1;
+    white-space: nowrap;
+    -webkit-text-stroke-color: #0A1C20;
+    -webkit-text-stroke-width: 0px;
+}
+
+body {
+    background-image: radial-gradient(rgba(0, 0, 0, 0.1) 20%, transparent 20%), radial-gradient(rgba(0, 0, 0, 0.1) 20%, transparent 20%);
+    background-color: #6FBFD9;
+    background-position: 0 0, 20px 20px;
+    background-size: 40px 40px;
+}
+
+.content {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-100px, -50%);
+    border: 1px solid red;
+
+    h1 {
+        .init;
+
+        span {
+            position: absolute;
+            left: 0;
+            top: 0;
+            display: inline-block;
+            margin-top: 60px;
+            height: 1000px;
+            font-size: 0;
+            opacity: 0;
+            transition: all 0.8s;
+            transform-origin: bottom center;
+            -webkit-text-stroke-width: 4px;
+
+            &:nth-child(1) {
+                z-index: 8;
+                transform: rotate(-19deg);
+            }
+            &:nth-child(2) {
+                z-index: 7;
+                transform: rotate(-13deg);
+            }
+            &:nth-child(3) {
+                z-index: 6;
+                transform: rotate(-8deg);
+            }
+            &:nth-child(4) {
+                z-index: 5;
+                transform: rotate(-3deg);
+            }
+            &:nth-child(5) {
+                z-index: 4;
+                transform: rotate(2deg);
+            }
+            &:nth-child(6) {
+                z-index: 3;
+                transform: rotate(13deg);
+            }
+            &:nth-child(7) {
+                z-index: 2;
+                transform: rotate(20deg);
+            }
+            &:nth-child(8) {
+                z-index: 1;
+                transform: rotate(23deg);
+            }
+          
+            &.capital {
+                font-size: 160px;
+            }
+
+            &.animate {
+                font-size: 160px;
+                opacity: 1;
+                margin-top: 0;
+            }
+
+        }
+
+
+    }
+    h2{
+        .init;
+        position: absolute;
+        top: 160px;
+        left: 50%;
+        font-size: 50px;
+        letter-spacing: -4px;
+        transform: translate(-120px);
+        -webkit-text-stroke-width: 2px;
+        span{
+            display: inline-block;
+            opacity: 0;
+            transform: all 0.8s;
+            &.animate{
+                opacity: 1;
+            }
+            &.capital{
+                font-size: 65px;
+                margin-left: 10px;
+            }
+        }
+    }
+}
