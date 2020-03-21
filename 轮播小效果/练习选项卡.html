@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body,
+        html,
+        ul {
+            margin: 0;
+            padding: 0;
+        }
+        
+        ul,
+        li {
+            list-style: none;
+        }
+
+        body {
+            background: indigo;
+        }
+
+        .stage {
+            width: 1500px;
+            overflow: hidden;
+            margin: 0 auto;
+
+        }
+
+        ul.left {
+            width: 300px;
+            background: gray;
+            float: left;
+            text-align: center;
+            margin-top: 150px;
+            height: 700px;
+            border-radius: 10px;
+        }
+
+        ul.left li {
+            font-size: 36px;
+            line-height: 2em;
+            border-bottom: 1px solid black;
+            transition: all 0.3s;
+        }
+
+        ul.left li:last-child {
+            border: none;
+        }
+
+        ul.left li.active {
+            background: orange;
+            line-height: 3em;
+        }
+
+        .right {
+            float: right;
+            width: 1150px;
+            height: 900px;
+            background: rgba(0, 0, 0, 0.3);
+            margin-top: 100px;
+            overflow: hidden;
+        }
+
+        .right .content {
+            width: 1150px;
+            height: 900px;
+            transition: all 0.5s;
+            
+
+        }
+
+        .right .content img {
+            width: 100%;
+            margin-top: 60px;
+            /* position: absolute;
+            left: 0;
+            top: 0; */
+        }
+
+        /* .right .content.active {
+            margin-top: 800px;
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="stage">
+        <ul class="left">
+            <li class="active">tab 1</li>
+            <li>tab 2</li>
+            <li>tab 3</li>
+            <li>tab 4</li>
+            <li>tab 5</li>
+            <li>tab 6</li>
+            <li>tab 7</li>
+        </ul>
+
+        <div class="right">
+            <div class="content active">
+                <img src="./img/a1.png" alt="">
+            </div>
+            <div class="content">
+                <img src="./img/a2.png" alt="">
+            </div>
+            <div class="content">
+                <img src="./img/a3.png" alt="">
+            </div>
+            <div class="content">
+                <img src="./img/a4.png" alt="">
+            </div>
+            <div class="content">
+                <img src="./img/a5.png" alt="">
+            </div>
+            <div class="content">
+                <img src="./img/a6.png" alt="">
+            </div>
+            <div class="content">
+                <img src="./img/a7.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+
+    <script>
+
+        $('ul.left li').mouseenter(function () {
+            $(this).addClass('active').siblings().removeClass('active')
+            $(".right .content.active").eq(0).css('margin-top', $(this).index() * -900 + 'px')
+        })
+    </script>
+</body>
+
+</html>

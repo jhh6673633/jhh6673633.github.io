@@ -6,7 +6,7 @@
 
 #### javascript
 
-​			[微信打飞机游戏](https://jhh6673633.github.io/打飞机小游戏)
+​			[微信打飞机游戏](https://jhh6673633.github.io/微信打飞机游戏)
 
 #### JQuery
 

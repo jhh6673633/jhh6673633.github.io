@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            background: lightcoral;
+        }
+
+        .stage {
+            width: 800px;
+            height: 470px;
+            border: 10px solid white;
+            margin: 50px auto;
+            position: relative;
+        }
+
+        .stage .icon {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: white;
+            position: absolute;
+            left: 375px;
+            top: 0;
+            z-index: 9;
+        }
+
+        .stage .icon.active {
+            background: black;
+        }
+
+        .stage .images {}
+
+        .images .img1 {
+            width: 800px;
+            height: 25px;
+            background: url('./img/l1.jpg') no-repeat;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 8;
+        }
+
+        .images .img2 {
+            width: 800px;
+            height: 470px;
+            background: url('./img/l2.jpg') no-repeat;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 7;
+        }
+    </style>
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="stage">
+        <div class="icon"></div>
+        <div class="images">
+            <div class="img1"></div>
+            <div class="img2"></div>
+        </div>
+    </div>
+
+    <script>
+        $('.stage .icon').mousedown(function () {
+            $('.stage').mousemove(function (e) {
+                var x = (e.pageX || e.clientX) - $(this).offset().left;
+                var y = (e.pageY || e.clientY) - $(this).offset().top;
+                var w = $('.stage .icon').width()
+                var h = $('.stage .icon').height()
+                console.log(x, y);
+                if (y > h / 2 && y < 470 - h / 2) {
+                    $('.stage .icon').css({ top: y - h / 2 })
+                }
+              
+
+                var current = parseInt($('.stage .icon').css('top'))
+                console.log(current);
+                $('.img1').css({ height: current + h / 2 })
+
+            })
+        }).mouseover(function () {
+            $(this).addClass('active')
+        }).mouseleave(function () {
+            $(this).removeClass('active')
+        }).mouseup(function () {
+            $('.stage').unbind('mousemove')
+        })
+    </script>
+</body>
+
+</html>

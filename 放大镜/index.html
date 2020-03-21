@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+            background: wheat;
+        }
+        .stage {
+            width: 815px;
+            margin: 0 auto;
+        }
+
+        .stage .main {
+            width: 400px;
+            background: chartreuse;
+            float: left;
+            position: relative;
+        }
+
+        .stage .main img {
+            width: 100%;
+            vertical-align: middle;
+        }
+
+        .stage .main .mask {
+            background: rgba(0, 0, 0, 0.5);
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            /* 使元素穿透 */
+            pointer-events: none;
+        }
+
+        .stage .zoom {
+            float: left;
+            width: 400px;
+            height: 400px;
+            background: url("./img/banner1.jpg") no-repeat;
+            background-size: 200% auto;
+            margin-left: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="stage">
+        <div class="main">
+            <img src="./img/banner1.jpg" alt="">
+            <div class="mask"></div>
+        </div>
+        <div class="zoom"></div>
+    </div>
+
+    <script>
+        var main = document.querySelector('.main');
+        var mask = document.querySelector('.mask');
+        var zoom = document.querySelector('.zoom');
+
+        main.onmousemove = function (e) {
+            console.log(e.offsetX, e.offsetY);
+
+            // if (e.offsetX > 300) {
+            //     return
+            // }
+            // if (e.offsetY > 300 ) {
+            //     return
+            // }
+            // if (e.offsetX < 100) {
+            //     return
+            // }
+            // if (e.offsetY < 100) {
+            //     return
+            // }
+            var x = e.offsetY - 100;
+            var y = e.offsetX - 100;
+
+            if (x > 200) {
+                x = 200;
+            }
+
+            if (x < 0) {
+                x = 0;
+            }
+
+            if (y > 200) {
+                y = 200;
+            }
+
+            if (y < 0) {
+                y = 0;
+            }
+
+            mask.style.top = x + 'px';
+            mask.style.left = y + 'px';
+
+
+            zoom.style.backgroundPositionX = x * -2 + 'px';
+            zoom.style.backgroundPositionY = y * -2 + 'px';
+
+        }
+    </script>
+</body>
+
+</html>
