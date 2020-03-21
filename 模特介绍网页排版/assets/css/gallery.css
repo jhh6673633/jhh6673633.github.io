@@ -1,0 +1,26 @@
+.gallery .container {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.gallery .row div[class^=col] {
+  padding: 5px;
+}
+.gallery .row div[class^=col] img {
+  border-radius: 5px;
+}
+#myModal img {
+  width: 100%;
+}
+#myModal .modal-footer span {
+  display: inline-block;
+  border: 2px solid black;
+  font-size: 16px;
+  padding: 5px 10px;
+}
+#myModal .modal-footer span:nth-child(1) {
+  float: left;
+}
+#myModal .modal-footer span:nth-child(2) {
+  float: right;
+}
+/*# sourceMappingURL=./gallery.css.map */

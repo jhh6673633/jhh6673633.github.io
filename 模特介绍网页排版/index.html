@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Srisakdi:400,700&amp;subset=latin-ext,thai,vietnamese"
+        rel="stylesheet" />
+    <link
+        href="http://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=latin-ext"
+        rel="stylesheet" />
+    <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+    <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <!-- 导航 -->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    Menu
+                </button>
+                <a class="navbar-brand" href="#">Models</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav  navbar-right">
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                            aria-expanded="false">Dropdown <span class="caret"></span></a>
+                        <ul class="dropdown-menu dropdown-menu-left">
+                            <li><a href="#">Service</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">NewsLetter</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+
+    <!-- banner -->
+    <section id="carousel-example-generic" class="carousel slide banner" data-ride="carousel" data-interval="3000">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <!-- <img src="./assets/images/2.jpg" alt="..."> -->
+                <div class="container caption">
+                    <div class="row">
+                        <div class="col-md-offset-6 col-xs-offset-1 col-xs-10 col-sm-12 col-md-6">
+                            <h5>THE EASIER WAY TO FIND MODELS</h5>
+                            <h3>Discover Models Or Be Discovered</h3>
+                            <a class="btn btn-default btn-lg" href="#" role="button">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <!-- <img src="./assets/images/2.jpg" alt="..."> -->
+                <div class="container caption">
+                    <div class="row">
+                        <div class="col-md-offset-6 col-xs-offset-1 col-xs-10 col-sm-12 col-md-6">
+                            <h5>THE EASIER WAY TO FIND MODELS</h5>
+                            <h3>Discover Models Or Be Discovered</h3>
+                            <a class="btn btn-danger" href="#" role="button">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <!-- <img src="./assets/images/2.jpg" alt="..."> -->
+                <div class="container caption">
+                    <div class="row">
+                        <div class="col-md-offset-6 col-xs-offset-1 col-xs-10 col-sm-12 col-md-6">
+                            <h5>THE EASIER WAY TO FIND MODELS</h5>
+                            <h3>Discover Models Or Be Discovered</h3>
+                            <a class="btn btn-danger" href="#" role="button">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Welcome -->
+    <section class="welcome">
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                    <div class="row">
+                        <div class="col-xs-12 title">
+                            <h3>Welcome To Our Models Website</h3>
+                            <h5>Together we’ll make this world <br> more beautiful.</h5>
+                        </div>
+
+                        <dl class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                            <span class="glyphicon glyphicon-refresh" aria-hidden="true"></span>
+                            <dt>Make Over</dt>
+                            <dd> Ut enim ad minima ven aiam, quis no strum ullam corp oris susc
+                                ipit.</dd>
+                        </dl>
+                        <dl class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                            <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                            <dt>Stylist</dt>
+                            <dd> Ut enim ad minima ven aiam, quis no strum ullam corp oris susc
+                                ipit.</dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 images">
+                    <img class="img-responsive" src="./assets/images/img.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 服务 -->
+    <section class="services">
+        <div class="container">
+            <ul class="row">
+                <li class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                    <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>
+                    <h5>HEADING HERE</h5>
+                    <p>Ut enim ad minima veniam, quis nostrum ullam corporis suscipit laboriosam.</p>
+                </li>
+                <li class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                    <span class="glyphicon glyphicon-gift" aria-hidden="true"></span>
+                    <h5>HEADING HERE</h5>
+                    <p>Ut enim ad minima veniam, quis nostrum ullam corporis suscipit laboriosam.</p>
+                </li>
+                <li class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                    <span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>
+                    <h5>HEADING HERE</h5>
+                    <p>Ut enim ad minima veniam, quis nostrum ullam corporis suscipit laboriosam.</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Blog Posts -->
+    <section class="blog">
+        <div class="container">
+            <div class="title">
+                <h3>Blog Posts</h3>
+                <p>Ut enim ad minim veniam, quis nostrud ullam.</p>
+            </div>
+
+            <div class="row">
+
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                    <div class="box">
+                        <a href=""><img class="img-responsive" src="./assets/images/blog1.jpg" alt=""></a>
+                        <div class="mask">
+                            13
+                            <span>Sep</span>
+                        </div>
+                    </div>
+                    <div class="text">
+                        <h4>Sit accus antium</h4>
+                        <ul>
+                            <li><a href=""><span class="glyphicon glyphicon-hand-up" aria-hidden="true"></span>20
+                                    Likes</a></li>
+                            <li><a href=""><span class="glyphicon glyphicon-comment" aria-hidden="true"></span>48
+                                    Comments</a></li>
+                        </ul>
+                        <p>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis
+                            nostrud exercitation.</p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                    <div class="box">
+                        <a href=""><img class="img-responsive" src="./assets/images/blog2.jpg" alt=""></a>
+                        <div class="mask">
+                            16
+                            <span>Sep</span>
+                        </div>
+                    </div>
+                    <div class="text">
+                        <h4>Sit accus antium</h4>
+                        <ul>
+                            <li><a href=""><span class="glyphicon glyphicon-hand-up" aria-hidden="true"></span>20
+                                    Likes</a></li>
+                            <li><a href=""><span class="glyphicon glyphicon-comment" aria-hidden="true"></span>48
+                                    Comments</a></li>
+                        </ul>
+                        <p>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis
+                            nostrud exercitation.</p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                    <div class="box">
+                        <a href=""><img class="img-responsive" src="./assets/images/blog3.jpg" alt=""></a>
+                        <div class="mask">
+                            20
+                            <span>Sep</span>
+                        </div>
+                    </div>
+                    <div class="text">
+                        <h4>Sit accus antium</h4>
+                        <ul>
+                            <li><a href=""><span class="glyphicon glyphicon-hand-up" aria-hidden="true"></span>20
+                                    Likes</a></li>
+                            <li><a href=""><span class="glyphicon glyphicon-comment" aria-hidden="true"></span>48
+                                    Comments</a></li>
+                        </ul>
+                        <p>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis
+                            nostrud exercitation.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FASHION -->
+    <section class="fashion">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-5">
+                    <span>Fashion Look</span>
+                    <h3>Creating Your Beauty Image</h3>
+                    <p>Donec consequat sapien ut leo cursus rhoncus. Nullam dui mi, vulputate ac metus at</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- gallery -->
+    <section class="gallery">
+        <div class="container">
+            <div class="title">
+                <h3>Our Gallery</h3>
+                <p>Ut enim ad minim veniam, quis nostrud ullam.</p>
+            </div>
+            <div class="row">
+
+                <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                    <img class="img-responsive" src="./assets/images/g1.jpg" alt="">
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                    <img class="img-responsive" src="./assets/images/g2.jpg" alt="">
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                    <img class="img-responsive" src="./assets/images/g3.jpg" alt="">
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                    <img class="img-responsive" src="./assets/images/g4.jpg" alt="">
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                    <img class="img-responsive" src="./assets/images/g5.jpg" alt="">
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                    <img class="img-responsive" src="./assets/images/g6.jpg" alt="">
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!--  Newsletter -->
+    <section class="newsletter">
+
+        <div class="container">
+            <div class="title">
+                <h3>Our Newsletter</h3>
+                <p>Ut enim ad minim veniam, quis nostrud ullam.</p>
+            </div>
+            <form action="" method="get">
+                <div class="row">
+
+                    <div class="col-xs-offset-1 col-sm-offset-0 col-xs-10 col-sm-4 col-md-4 col-lg-4">
+                        <input type="text" class="form-control" id="exampleInputName2" placeholder="Name">
+                    </div>
+                    <div class="col-xs-offset-1 col-sm-offset-0 col-xs-10 col-sm-4 col-md-4 col-lg-4">
+                        <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Email Address">
+                    </div>
+                    <div class="col-xs-offset-1 col-sm-offset-0 col-xs-10 col-sm-4 col-md-4 col-lg-4">
+                        <button type="submit" class="btn btn-default">Subscribe</button>
+                    </div>
+
+                </div>
+            </form>
+
+        </div>
+
+    </section>
+
+    <!-- Contact-->
+    <section class="contact">
+
+        <div class="container">
+            <div class="title">
+                <h3>Contact Us</h3>
+                <p>Ut enim ad minim veniam, quis nostrud ullam.</p>
+            </div>
+
+            <div class="row">
+
+                <div class="col-sm-offset-1 col-md-offset-0  col-xs-12 col-sm-10 col-md-6 col-lg-6">
+                    <ul>
+                        <li>
+                            <h4>Address</h4>
+                            <p>123 San Sebastian, Hill Towers 4567 New York City USA.</p>
+                        </li>
+                        <li>
+                            <h4>Phone</h4>
+                            <p>+222 111 333 4444</p>
+                            <p>+222 111 333 5555</p>
+                        </li>
+                        <li>
+                            <h4>Mail</h4>
+                            <p><a href="">Mail1@example.com</a></p>
+                            <p><a href="">Mail1@example.com</a></p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-offset-1 col-md-offset-0 col-xs-12 col-sm-10 col-md-6 col-lg-6">
+                    <div class="right">
+                        <h4>Get In Touch</h4>
+                        <form class="form-inline">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="exampleInputEmail3" placeholder="Name">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" id="exampleInputPassword3"
+                                    placeholder="email">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="exampleInputEmail3" placeholder="Subjet">
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" rows="3" placeholder="Message"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <button type="button" class="btn btn-primary btn-lg btn-block">SEND</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- footer -->
+    <section class="footer">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                    <h2>WHO WE ARE</h2>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+                        totam rem
+                        aperiam, eaque ipsa quae.</p>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                    <h2>LATEST NEWS</h2>
+                    <ul>
+                        <li>
+                            <h4>Sed ut piciatis unde</h4>
+                            <p>30 Sep 2018</p>
+                        </li>
+                        <li>
+                            <h4>Modi tempra incunt</h4>
+                            <p>02 Aug 2018</p>
+                        </li>
+                        <li>
+                            <h4>ullam corpis sucipit</h4>
+                            <p>02 Aug 2018</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                    <h2>CONTACT US</h2>
+                    <ul>
+                        <li>
+                            <h4>Phone</h4>
+                            <p>+121 098 8907 9987</p>
+                        </li>
+                        <li>
+                            <h4>Email</h4>
+                            <p>info@example.com</p>
+                        </li>
+                        <li>
+                            <h4>Location</h4>
+                            <p>Honey Avenue, New York City</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                    <h2>Quick Links</h2>
+                    <ul>
+                        <li>
+                            <a href="">Home</a>
+                        </li>
+                        <li>
+                            <a href="">About Us</a>
+                        </li>
+                        <li>
+                            <a href="">Blog</a>
+                        </li>
+                        <li>
+                            <a href="">Gallery</a>
+                        </li>
+                        <li>
+                            <a href="">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <div class="last">
+            <a href="#"><img src="./assets/images/move-top.png" alt=""></a>
+            <p>Copyright © 2019.Company name All rights reserved.More Templates </p>
+        </div>
+    </section>
+
+    <!-- Button trigger modal -->
+    <!-- <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+        Launch demo modal
+    </button> -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">图片展示</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive" src="" alt="">
+                </div>
+                <div class="modal-footer">
+                    <span>上一张</span>
+                    <span>下一张</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+    <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

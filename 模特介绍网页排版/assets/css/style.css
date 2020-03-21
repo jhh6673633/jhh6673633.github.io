@@ -1,0 +1,559 @@
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+body,
+a,
+span {
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+}
+section .container .title {
+  text-align: center;
+  margin: 60px 0;
+}
+section .container .title h3 {
+  font-size: 28px;
+}
+section .container .title p {
+  letter-spacing: 0.1em;
+  color: #999999;
+}
+nav.navbar {
+  margin-bottom: 0;
+  padding: 10px 0;
+}
+nav.navbar .navbar-header button.navbar-toggle {
+  border: none;
+}
+nav.navbar .navbar-header .navbar-brand {
+  font-size: 36px;
+  color: #fc427b;
+  font-weight: bold;
+  font-family: "Srisakdi", cursive;
+}
+nav.navbar .navbar-collapse ul.navbar-nav li {
+  margin: 0 15px;
+}
+nav.navbar .navbar-collapse ul.navbar-nav li.open a {
+  background: none;
+}
+nav.navbar .navbar-collapse ul.navbar-nav li:hover a {
+  background: none;
+}
+nav.navbar .navbar-collapse ul.navbar-nav li a {
+  font-size: 16px;
+  font-weight: 400;
+  color: #333333;
+  transition: all 0.3s;
+  padding-left: 0;
+  padding-right: 0;
+  text-align: center;
+}
+nav.navbar .navbar-collapse ul.navbar-nav li a.active {
+  color: #fc427b;
+  background: none;
+}
+nav.navbar .navbar-collapse ul.navbar-nav li a:hover {
+  color: #fc427b;
+  background: none;
+}
+nav.navbar .navbar-collapse ul.navbar-nav li ul.dropdown-menu {
+  background: none;
+  border-radius: 5px;
+  padding: 10px;
+}
+nav.navbar .navbar-collapse ul.navbar-nav li ul.dropdown-menu li {
+  margin: 0;
+}
+nav.navbar .navbar-collapse ul.navbar-nav li ul.dropdown-menu li a {
+  color: #333333;
+}
+section.banner .carousel-indicators {
+  bottom: 30px;
+}
+section.banner .carousel-indicators li {
+  width: 16px;
+  height: 16px;
+  background: #fc427b;
+  border: 4px solid white;
+  margin: 0 5px;
+}
+section.banner .carousel-indicators li:hover {
+  background: white;
+}
+section.banner .carousel-indicators li.active {
+  background: white;
+}
+section.banner .carousel-inner .item {
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+}
+section.banner .carousel-inner .item:nth-child(1) {
+  background-image: url("../images/2.jpg");
+}
+section.banner .carousel-inner .item:nth-child(2) {
+  background-image: url("../images/4.jpg");
+}
+section.banner .carousel-inner .item:nth-child(3) {
+  background-image: url("../images/1.jpg");
+}
+section.banner .carousel-inner .item .caption {
+  color: white;
+  padding-top: 100px;
+  text-align: right;
+}
+section.banner .carousel-inner .item .caption h5 {
+  font-size: 16px;
+  color: #333333;
+  font-weight: normal;
+  line-height: 2em;
+}
+section.banner .carousel-inner .item .caption h3 {
+  font-size: 24px;
+  font-weight: bolder;
+  line-height: 1.5em;
+  text-shadow: 2px 5px 3px rgba(0, 0, 0, 0.06);
+}
+section.banner .carousel-inner .item .caption a.btn {
+  border: 2px solid white;
+  background: #fc427b;
+  color: white;
+  font-weight: normal;
+  transition: all 0.3s;
+  padding: 15px 30px;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+section.banner .carousel-inner .item .caption a.btn:hover {
+  background: white;
+  color: #333333;
+}
+section.welcome .images {
+  text-align: center;
+}
+section.welcome .title {
+  padding-top: 50px;
+}
+section.welcome .title h3 {
+  font-size: 35px;
+  font-weight: 100;
+}
+section.welcome .title h5 {
+  font-size: 18px;
+  font-style: italic;
+  font-weight: normal;
+  letter-spacing: 0.1em;
+  line-height: 1.5em;
+}
+section.welcome dl {
+  text-align: center;
+}
+section.welcome dl span {
+  font-size: 32px;
+  border: 2px solid white;
+  border-radius: 50%;
+  background: #fc427b;
+  padding: 30px;
+  color: white;
+}
+section.welcome dl dt {
+  font-size: 24px;
+  font-weight: 300;
+  color: #333333;
+  line-height: 2em;
+}
+section.welcome dl dd {
+  color: #999999;
+  font-size: 16px;
+  line-height: 2em;
+}
+section.services {
+  background: #fc427b;
+  padding: 80px 0;
+}
+section.services ul li {
+  text-align: center;
+  color: white;
+}
+section.services ul li span {
+  font-size: 32px;
+  border: 2px solid white;
+  border-radius: 50%;
+  padding: 30px;
+}
+section.services ul li h5 {
+  font-weight: 600;
+  font-size: 24px;
+  margin: 50px 0 20px 0;
+}
+section.services ul li p {
+  font-weight: 300;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+section.blog .row div[class^=col] {
+  padding-bottom: 80px;
+}
+section.blog .row div[class^=col] .box {
+  position: relative;
+}
+section.blog .row div[class^=col] .box .mask {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 10px 25px;
+  background: #38d2fe;
+  font-size: 26px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: white;
+  text-align: center;
+}
+section.blog .row div[class^=col] .box .mask span {
+  display: block;
+  font-size: 14px;
+}
+section.blog .row div[class^=col] .text h4 {
+  font-size: 21px;
+  line-height: 2em;
+}
+section.blog .row div[class^=col] .text ul {
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+section.blog .row div[class^=col] .text ul li {
+  float: left;
+  margin-right: 10px;
+  letter-spacing: 1px;
+}
+section.blog .row div[class^=col] .text ul li a {
+  color: #999999;
+  font-size: 16px;
+}
+section.blog .row div[class^=col] .text ul li a span {
+  color: #fc427b;
+  padding-right: 5px;
+}
+section.blog .row div[class^=col] .text ul li a:hover {
+  color: #333333;
+  text-decoration: none;
+}
+section.blog .row div[class^=col] .text p {
+  color: #999999;
+  letter-spacing: 1px;
+  font-size: 16px;
+  line-height: 1.5em;
+}
+section.fashion {
+  height: 350px;
+  background: url('../images/bg2.jpg');
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+section.fashion .row {
+  color: white;
+  margin-top: 80px;
+}
+section.fashion .row span {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 26px;
+  font-weight: bold;
+}
+section.fashion .row h3 {
+  font-size: 32px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  line-height: 1.5em;
+}
+section.fashion .row p {
+  font-size: 16px;
+  line-height: 2em;
+}
+section.gallery {
+  padding-bottom: 100px;
+}
+section.gallery .container {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+section.gallery .container .row div[class^=col] {
+  padding: 5px;
+}
+section.gallery .container .row div[class^=col] img {
+  border-radius: 5px;
+}
+section.newsletter {
+  background: url('../images/bg3.jpg');
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 100px;
+  background-attachment: fixed;
+}
+section.newsletter .title {
+  color: white;
+}
+section.newsletter .title h3 {
+  font-size: 36px;
+  letter-spacing: 1px;
+}
+section.newsletter form {
+  font-size: 14px;
+  font-weight: 400;
+}
+section.newsletter form input {
+  padding: 20px;
+  margin-bottom: 15px;
+}
+section.newsletter form button {
+  width: 100%;
+  background: #38d2fe;
+  color: white;
+  text-transform: uppercase;
+  padding: 10px 0;
+  border: none;
+}
+section.contact {
+  padding-bottom: 300px;
+}
+section.contact .row ul li {
+  letter-spacing: 1px;
+  padding: 40PX;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 12px -1px;
+}
+section.contact .row ul li h4 {
+  font-size: 20px;
+  color: #38d2fe;
+  font-weight: 600;
+}
+section.contact .row ul li p {
+  color: #999999;
+  font-size: 16px;
+  line-height: 1.5em;
+}
+section.contact .row ul li p a {
+  color: #999999;
+}
+section.contact .row ul li p a:hover {
+  color: black;
+  text-decoration: none;
+}
+section.contact .row .right {
+  padding: 40PX;
+  box-shadow: 0 2px 12px -1px;
+}
+section.contact .row .right h4 {
+  font-size: 20px;
+  color: #38d2fe;
+  font-weight: 600;
+}
+section.contact .row .right form .form-group {
+  width: 100%;
+  font-size: 16px;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+section.contact .row .right form .form-group:nth-child(4) {
+  margin-bottom: 40px;
+}
+section.contact .row .right form .form-group input {
+  width: 100%;
+  padding: 20px;
+  border: none;
+  border-bottom: 1px solid #828282;
+  border-radius: 0;
+  font-size: 16px;
+  outline: none;
+}
+section.contact .row .right form .form-group textarea {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #828282;
+  padding: 20px;
+  height: 160px;
+  outline: none;
+}
+section.contact .row .right form .form-group button {
+  background-color: #fc427b;
+  border: none;
+  border-radius: 0;
+}
+section.footer {
+  background: #212020;
+  padding-bottom: 50px;
+}
+section.footer .row {
+  padding-bottom: 50px;
+}
+section.footer .row div[class^=col] {
+  color: white;
+  letter-spacing: 1px;
+}
+section.footer .row div[class^=col] h2 {
+  font-size: 24px;
+  font-weight: 500;
+  margin: 50px 0;
+}
+section.footer .row div[class^=col] p {
+  color: #ababab;
+  font-size: 14px;
+  line-height: 1.5em;
+}
+section.footer .row div[class^=col] ul li {
+  margin-bottom: 15px;
+}
+section.footer .row div[class^=col] ul li h4 {
+  font-size: 16px;
+}
+section.footer .row div[class^=col] ul li a {
+  color: #ababab;
+  font-size: 16px ;
+}
+section.footer .row div[class^=col] ul li a:hover {
+  text-decoration: none;
+  color: white;
+}
+section.footer .last {
+  width: 100%;
+  border-top: 1px solid white;
+  text-align: center;
+}
+section.footer .last a {
+  display: block;
+  margin: 15px;
+}
+section.footer .last p {
+  color: #ababab;
+  letter-spacing: 1px;
+  font-size: 18px;
+}
+#myModal img {
+  width: 100%;
+}
+#myModal .modal-footer span {
+  display: inline-block;
+  border: 2px solid black;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 5px 10px;
+}
+#myModal .modal-footer span:nth-child(1) {
+  float: left;
+}
+#myModal .modal-footer span:nth-child(2) {
+  float: right;
+}
+/* 小屏幕（平板，大于等于 768px） */
+@media (min-width: 768px) {
+  nav.navbar {
+    padding: 10px 50px;
+  }
+  nav.navbar .navbar-collapse ul.navbar-nav li {
+    margin: 0 15px;
+  }
+  nav.navbar .navbar-collapse ul.navbar-nav li a {
+    text-align: left;
+  }
+  nav.navbar .navbar-collapse ul.navbar-nav li:hover ul.dropdown-menu {
+    display: block;
+  }
+  nav.navbar .navbar-collapse ul.navbar-nav li ul.dropdown-menu {
+    background: #333333;
+  }
+  nav.navbar .navbar-collapse ul.navbar-nav li ul.dropdown-menu li a {
+    color: white;
+    transition: all 0.3s;
+    padding: 5px 10px;
+  }
+  nav.navbar .navbar-collapse ul.navbar-nav li ul.dropdown-menu li a:hover {
+    color: #333333;
+    background: white;
+  }
+  section.banner .carousel-indicators {
+    bottom: 30px;
+  }
+  section.banner .carousel-indicators li {
+    width: 16px;
+    height: 16px;
+    background: #fc427b;
+    border: 4px solid white;
+    margin: 0 5px;
+  }
+  section.banner .carousel-indicators li:hover {
+    background: white;
+  }
+  section.banner .carousel-indicators li.active {
+    background: white;
+  }
+  section.banner .carousel-inner .item {
+    height: 500px;
+  }
+  section.banner .carousel-inner .item .caption {
+    padding-top: 130px;
+  }
+  section.banner .carousel-inner .item .caption h5 {
+    font-size: 18px;
+  }
+  section.banner .carousel-inner .item .caption h3 {
+    font-size: 30px;
+  }
+  section.fashion {
+    height: 420px;
+  }
+  section.fashion .row {
+    margin-top: 100px;
+  }
+  section.contact textarea {
+    height: 180px;
+  }
+}
+/* 中等屏幕（桌面显示器，大于等于 992px） */
+@media (min-width: 992px) {
+  section.banner .carousel-inner .item {
+    height: 600px;
+  }
+  section.banner .carousel-inner .item .caption {
+    padding-top: 170px;
+  }
+  section.banner .carousel-inner .item .caption h5 {
+    font-size: 20px;
+  }
+  section.banner .carousel-inner .item .caption h3 {
+    font-size: 40px;
+  }
+  section.fashion {
+    height: 500px;
+  }
+  section.fashion .row {
+    margin-top: 100px;
+  }
+  section.contact textarea {
+    height: 200px;
+  }
+}
+/* 大屏幕（大桌面显示器，大于等于 1200px） */
+@media (min-width: 1200px) {
+  section.banner .carousel-inner .item {
+    height: 720px;
+  }
+  section.banner .carousel-inner .item .caption {
+    padding-top: 250px;
+  }
+  section.banner .carousel-inner .item .caption h5 {
+    font-size: 25px;
+  }
+  section.banner .carousel-inner .item .caption h3 {
+    font-size: 50px;
+  }
+  section.fashion {
+    height: 560px;
+  }
+  section.fashion .row {
+    margin-top: 120px;
+  }
+}
+/*# sourceMappingURL=./style.css.map */

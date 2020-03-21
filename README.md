@@ -16,9 +16,9 @@
 
 #### BootStrap
 
-​			[自驾游旅行网页排版](https://jhh6673633.github.io/)
+​			[自驾游旅行网页排版](https://jhh6673633.github.io/自驾游旅行网页排版)
 
-​			[模特介绍网页排版](https://jhh6673633.github.io/)
+​			[模特介绍网页排版](https://jhh6673633.github.io/模特介绍网页排版)
 
 #### Ajax
 
