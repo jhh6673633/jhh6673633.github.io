@@ -8,11 +8,13 @@
 
 ​			[微信打飞机游戏](https://jhh6673633.github.io/微信打飞机游戏)
 
+​			[放大镜](https://jhh6673633.github.io/放大镜)
+
 #### JQuery
 
-​			[轮播小效果](https://jhh6673633.github.io/)
+​			[轮播小效果](https://jhh6673633.github.io/轮播小效果)
 
-​			[图片分割线](https://jhh6673633.github.io/)
+​			[图片分割线](https://jhh6673633.github.io/图片分割线)
 
 #### BootStrap
 
@@ -24,5 +26,7 @@
 
 ​			[获取瀑布流图片]()
 
-​			
+#### CSS3
+
+​			[文字特效](https://jhh6673633.github.io/文字特效)
 
