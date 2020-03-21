@@ -1,0 +1,183 @@
+body {
+  margin: 0;
+  background: url(https://www.17sucai.com/preview/514705/2018-01-03/%E6%97%8B%E8%BD%AC%E9%AD%94%E6%96%B9/img/bg.jpg) no-repeat;
+  background-size: 100%;
+  perspective: 800px;
+  box-sizing: border-box;
+}
+.box {
+  width: 200px;
+  height: 200px;
+  margin: 200px auto;
+  animation: myrotate 3s linear 0s infinite;
+  transform-style: preserve-3d;
+}
+.box .small {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  transform-style: preserve-3d;
+}
+.box .small .top {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: 1px solid #ccc;
+  background: url(https://www.17sucai.com/preview/514705/2018-01-03/%E6%97%8B%E8%BD%AC%E9%AD%94%E6%96%B9/img/01.png);
+  transform: rotateX(90deg) translateZ(-50px);
+}
+.box .small .bottom {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: 1px solid #ccc;
+  background: url(https://www.17sucai.com/preview/514705/2018-01-03/%E6%97%8B%E8%BD%AC%E9%AD%94%E6%96%B9/img/02.png);
+  transform: rotateX(90deg) translateZ(50px);
+}
+.box .small .left {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: 1px solid #ccc;
+  background: url(https://www.17sucai.com/preview/514705/2018-01-03/%E6%97%8B%E8%BD%AC%E9%AD%94%E6%96%B9/img/03.png);
+  transform: rotateY(-90deg) translateZ(50px);
+}
+.box .small .right {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: 1px solid #ccc;
+  background: url(https://www.17sucai.com/preview/514705/2018-01-03/%E6%97%8B%E8%BD%AC%E9%AD%94%E6%96%B9/img/04.png);
+  transform: rotateY(90deg) translateZ(50px);
+}
+.box .small .side {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: 1px solid #ccc;
+  background: url(https://www.17sucai.com/preview/514705/2018-01-03/%E6%97%8B%E8%BD%AC%E9%AD%94%E6%96%B9/img/05.png);
+  transform: translateZ(50px);
+}
+.box .small .back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: 1px solid #ccc;
+  background: url(https://www.17sucai.com/preview/514705/2018-01-03/%E6%97%8B%E8%BD%AC%E9%AD%94%E6%96%B9/img/06.png);
+  transform: rotateY(180deg) translateZ(50px);
+}
+.box .big {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-style: preserve-3d;
+}
+.box .big .top {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: 1px solid #ccc;
+  transition: all 0.5s;
+  background: rgba(255, 255, 255, 0.3);
+  transform: rotateX(90deg) translateZ(-100px);
+}
+.box .big .bottom {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: 1px solid #ccc;
+  transition: all 0.5s;
+  background: rgba(255, 255, 255, 0.3);
+  transform: rotateX(90deg) translateZ(100px);
+}
+.box .big .left {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: 1px solid #ccc;
+  transition: all 0.5s;
+  background: rgba(255, 255, 255, 0.3);
+  transform: rotateY(-90deg) translateZ(100px);
+}
+.box .big .right {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: 1px solid #ccc;
+  transition: all 0.5s;
+  background: rgba(255, 255, 255, 0.3);
+  transform: rotateY(90deg) translateZ(100px);
+}
+.box .big .side {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: 1px solid #ccc;
+  transition: all 0.5s;
+  background: rgba(255, 255, 255, 0.3);
+  transform: translateZ(100px);
+}
+.box .big .back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: 1px solid #ccc;
+  transition: all 0.5s;
+  background: rgba(255, 255, 255, 0.3);
+  transform: rotateY(180deg) translateZ(100px);
+}
+@keyframes myrotate {
+  from {
+    transform: rotateX(15deg) rotateY(0deg);
+  }
+  to {
+    transform: rotateX(15deg) rotateY(360deg);
+  }
+}
+.box:hover .big .top {
+  transform: rotateX(90deg) translateZ(-200px);
+}
+.box:hover .big .bottom {
+  transform: rotateX(90deg) translateZ(200px);
+}
+.box:hover .big .left {
+  transform: rotateY(-90deg) translateZ(200px);
+}
+.box:hover .big .right {
+  transform: rotateY(90deg) translateZ(200px);
+}
+.box:hover .big .side {
+  transform: translateZ(200px);
+}
+.box:hover .big .back {
+  transform: rotateY(180deg) translateZ(200px);
+}
+/*# sourceMappingURL=./style.css.map */

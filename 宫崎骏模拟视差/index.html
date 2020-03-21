@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>Document</title>
+	<link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+	<div class="stage">
+		<dl>
+			<dt>Movies</dt>
+			<dd>Popular</dd>
+		</dl>
+		<div class="items">
+			<div class="card">
+				<p>Princess Mononoke</p>
+			</div>
+			<div class="card">
+				<p>Spirited Away</p>
+			</div>
+			<div class="card">
+				<p>Howl's Moving Castle</p>
+			</div>
+		</div>
+	</div>
+
+	<script>
+		var stage = document.querySelector(".stage");
+		var cards = stage.querySelectorAll(".items .card");
+
+		document.body.onmousemove = function (event) {
+			var x =
+				event.clientX - stage.offsetLeft - stage.offsetWidth / 2;
+			var y =
+				event.clientY - stage.offsetTop - stage.offsetHeight / 2;
+			console.log(x, y);
+
+			stage.style.transform =
+				"rotateY(" + x / 20 + "deg) rotateX(" + y / 20 + "deg)";
+			// 遍历卡片
+			cards.forEach(function (card, index) {
+				card.style.backgroundPosition =
+					-x / 80 +
+					10 +
+					"px " +
+					(-y / 80 + 60) +
+					"px, " +
+					(x / 60 + -10) +
+					"px " +
+					(y / 60 + -10) +
+					"px";
+
+				if (index == 1) {
+					card.style.backgroundPosition =
+						-x / 80 +
+						30 +
+						"px " +
+						(-y / 80 + 60) +
+						"px, " +
+						(x / 60 + -10) +
+						"px " +
+						(y / 60 + -10) +
+						"px";
+				}
+			});
+		};
+	</script>
+</body>
+
+</html>

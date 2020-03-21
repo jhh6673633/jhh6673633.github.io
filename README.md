@@ -10,6 +10,8 @@
 
 ​			[放大镜](https://jhh6673633.github.io/放大镜)
 
+​			[js实现简单计算器](https://jhh6673633.github.io/js实现简单计算器)
+
 #### JQuery
 
 ​			[轮播小效果](https://jhh6673633.github.io/轮播小效果)
@@ -30,8 +32,7 @@
 
 ​			[文字特效](https://jhh6673633.github.io/文字特效)
 
+​           [3d盒子旋转](https://jhh6673633.github.io/3d盒子旋转)
 
-#### CSS3
-
-​			[文字特效](https://jhh6673633.github.io/文字特效)
+​		    [宫崎骏模拟视差](https://jhh6673633.github.io/宫崎骏模拟视差)	
 
