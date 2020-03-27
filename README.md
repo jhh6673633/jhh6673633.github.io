@@ -36,6 +36,10 @@
 
 ​			[canvas+es6抽象艺术的背景粒子动画](https://jhh6673633.github.io/canvas+es6抽象艺术的背景粒子动画)
 
+###### 多媒体
+
+​			[音乐播放器](https://jhh6673633.github.io/音乐播放器)
+
 #### CSS3
 
 ​			[文字特效](https://jhh6673633.github.io/文字特效)
@@ -52,3 +56,6 @@
 
 
 
+#### Vue.js
+
+​		[多功能唯我音乐播放器](https://jhh6673633.github.io/多功能唯我音乐播放器)

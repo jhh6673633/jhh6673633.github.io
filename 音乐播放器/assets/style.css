@@ -1,0 +1,128 @@
+body {
+  background: #383b44;
+}
+.stage {
+  width: 350px;
+  margin: 50px auto;
+}
+.stage .ui {
+  color: white;
+  overflow: hidden;
+  padding: 100px 20px 30px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.stage .ui h3 {
+  font-size: 14px;
+}
+.stage .ui p {
+  font-size: 12px;
+}
+.stage .ui span {
+  font-size: 12px;
+  display: inline-block;
+}
+.stage .ui span.current {
+  float: left;
+}
+.stage .ui span.duration {
+  float: right;
+}
+.stage ul.playlist li {
+  padding: 20px 30px;
+  background: white;
+  font-weight: lighter;
+  transition: all 0.5s;
+}
+.stage ul.playlist li.playing {
+  background: #f55c5c;
+  color: white;
+}
+.stage ul.playlist li.playing img {
+  animation: myrotate 3s linear infinite;
+}
+.stage ul.playlist li.paused img {
+  animation-play-state: paused;
+}
+.stage ul.playlist li .thumb {
+  width: 40px;
+  height: 40px;
+  float: left;
+  margin-right: 10px;
+}
+.stage ul.playlist li .thumb img {
+  width: 100%;
+  border-radius: 50%;
+}
+.stage ul.playlist li .text {
+  line-height: 20px;
+}
+.stage .controls {
+  display: flex;
+  background: white;
+}
+.stage .controls span {
+  flex: 1;
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+  line-height: 30px;
+}
+.stage .controls span i.fa-play,
+.stage .controls span i.fa-pause {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  margin: auto;
+}
+.stage .controls span i.fa-play::before,
+.stage .controls span i.fa-pause::before {
+  line-height: 70px;
+}
+@keyframes myrotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.stage label {
+  background: rgba(0, 0, 0, 0.3);
+  display: block;
+  height: 10px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  margin: 15px 0;
+}
+.stage .progress {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background: #f55c5c;
+}
+.stage .progress::after {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 50%;
+  float: right;
+  margin-right: -5px;
+}
+.stage input {
+  height: 5px;
+  line-height: 5px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+}
+/*# sourceMappingURL=./style.css.map */
